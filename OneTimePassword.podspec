@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency "Base32", "~> 1.0.2"
   s.pod_target_xcconfig = {
+    'SWIFT_VERSION' => '3.0',
     "SWIFT_INCLUDE_PATHS[sdk=appletvos*]"         => "$(SRCROOT)/OneTimePassword/CommonCrypto/appletvos",
     "SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]"  => "$(SRCROOT)/OneTimePassword/CommonCrypto/appletvsimulator",
     "SWIFT_INCLUDE_PATHS[sdk=iphoneos*]"          => "$(SRCROOT)/OneTimePassword/CommonCrypto/iphoneos",
